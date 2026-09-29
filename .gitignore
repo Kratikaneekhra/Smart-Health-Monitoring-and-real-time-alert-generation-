@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.pyc
+.env
+
+# Large ML model files
+*.pkl
+*.joblib
+*.h5
+*.keras

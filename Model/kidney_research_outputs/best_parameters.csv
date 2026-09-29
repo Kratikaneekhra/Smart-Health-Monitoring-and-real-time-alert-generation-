@@ -1,0 +1,6 @@
+,model__C,model__solver,model__max_depth,model__min_samples_leaf,model__min_samples_split,model__n_estimators,model__colsample_bytree,model__learning_rate,model__subsample,model__activation,model__alpha,model__hidden_layer_sizes,model__learning_rate_init
+Logistic Regression,0.01,lbfgs,,,,,,,,,,,
+Decision Tree,,,3.0,4.0,2.0,,,,,,,,
+Random Forest,,,,1.0,2.0,300.0,,,,,,,
+XGBoost,,,2.0,,,300.0,1.0,0.01,1.0,,,,
+ANN,,,,,,,,,,tanh,0.0001,"(32,)",0.01
