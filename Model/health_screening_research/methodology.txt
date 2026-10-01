@@ -1,0 +1,169 @@
+
+
+HEALTH SCREENING DATA
+RESEARCH METHODOLOGY
+
+
+1. DATASET
+
+The Health Screening dataset was analyzed for binary cardiovascular
+disease prediction using the variable 'cardio' as the target.
+
+
+2. DATA QUALITY
+
+The dataset was audited for:
+
+- Missing values
+- Duplicate records
+- Invalid values
+- Extreme physiologically implausible values
+- Data types
+- Class distribution
+
+
+3. DATA QUALITY FILTERING
+
+Records were removed when:
+
+Age < 18 or Age > 100
+
+Height < 120 cm or Height > 220 cm
+
+Weight < 30 kg or Weight > 200 kg
+
+Systolic BP < 80 or > 250 mmHg
+
+Diastolic BP < 40 or > 150 mmHg
+
+BMI < 12 or > 60
+
+Systolic BP <= Diastolic BP
+
+
+4. FEATURE SELECTION
+
+The following predictors were used:
+
+AgeinYr
+gender
+height
+weight
+ap_hi
+ap_lo
+cholesterol
+gluc
+smoke
+alco
+active
+BMI
+
+
+5. EXCLUDED VARIABLES
+
+Identifiers such as:
+
+id
+Unnamed: 0
+
+were excluded.
+
+The raw 'age' variable was excluded because AgeinYr provides the
+interpretable age representation.
+
+BMICat and AgeGroup were excluded because they are derived
+categorical representations of BMI and age.
+
+
+6. PREPROCESSING
+
+Numeric variables:
+
+- Median imputation
+- Standardization for Logistic Regression and ANN
+
+Categorical variables:
+
+- Most frequent imputation
+- One-hot encoding
+
+
+7. DATA SPLITTING
+
+The dataset was divided into:
+
+80% training
+20% independent hold-out testing
+
+Stratification was used to preserve class proportions.
+
+
+8. MACHINE LEARNING MODELS
+
+Five models were evaluated:
+
+1. Logistic Regression
+2. Decision Tree
+3. Random Forest
+4. XGBoost
+5. Artificial Neural Network
+
+
+9. CROSS-VALIDATION
+
+Five-fold Stratified Cross-Validation was performed on the training
+dataset.
+
+The hold-out test dataset was not used during model development.
+
+
+10. EVALUATION METRICS
+
+The following metrics were calculated:
+
+Accuracy
+Precision
+Recall / Sensitivity
+Specificity
+F1-score
+ROC-AUC
+PR-AUC
+Matthews Correlation Coefficient
+Brier Score
+
+
+11. EXPLAINABILITY
+
+Model-agnostic permutation feature importance was calculated using
+ROC-AUC as the scoring metric.
+
+XGBoost feature importance was visualized for interpretation.
+
+
+12. VISUAL ANALYSIS
+
+The study generates:
+
+- Target distribution
+- Numeric distributions
+- Boxplots
+- Correlation matrix
+- Categorical distributions
+- Target rates
+- Age comparison
+- Blood pressure comparison
+- ROC curves
+- Precision-Recall curves
+- Confusion matrices
+- Feature importance
+
+
+13. RESEARCH LIMITATION
+
+The dataset represents a screening/prediction dataset and the
+resulting models should not be interpreted as clinically validated
+diagnostic systems.
+
+Independent external validation, calibration assessment, confidence
+intervals, threshold analysis and prospective validation would be
+required before clinical deployment.

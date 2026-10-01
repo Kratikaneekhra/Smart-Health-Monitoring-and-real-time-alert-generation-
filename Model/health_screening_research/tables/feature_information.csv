@@ -1,0 +1,13 @@
+Feature,Type
+AgeinYr,Numeric
+gender,Categorical
+height,Numeric
+weight,Numeric
+ap_hi,Numeric
+ap_lo,Numeric
+cholesterol,Categorical
+gluc,Categorical
+smoke,Categorical
+alco,Categorical
+active,Categorical
+BMI,Numeric
