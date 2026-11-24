@@ -1,0 +1,119 @@
+{
+  "key": "diabetes",
+  "deployed": "Logistic Regression",
+  "data_source": "demo-synthetic",
+  "n_rows": 30000,
+  "n_train": 24000,
+  "n_test": 6000,
+  "prevalence": 0.0723,
+  "features": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "smoking_history",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level"
+  ],
+  "numeric": [
+    "age",
+    "hypertension",
+    "heart_disease",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level"
+  ],
+  "categorical": [
+    "gender",
+    "smoking_history"
+  ],
+  "reference": {
+    "age": 41.0,
+    "hypertension": 0.0,
+    "heart_disease": 0.0,
+    "bmi": 26.92,
+    "HbA1c_level": 5.4,
+    "blood_glucose_level": 137.0,
+    "gender": "Female",
+    "smoking_history": "No Info"
+  },
+  "all_models": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.9333,
+      "precision": 0.6848,
+      "recall": 0.1452,
+      "specificity": 0.9948,
+      "f1": 0.2395,
+      "roc_auc": 0.8698,
+      "pr_auc": 0.4286,
+      "brier": 0.0522,
+      "tn": 5537,
+      "fp": 29,
+      "fn": 371,
+      "tp": 63
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.9275,
+      "precision": 0.4969,
+      "recall": 0.182,
+      "specificity": 0.9856,
+      "f1": 0.2664,
+      "roc_auc": 0.7893,
+      "pr_auc": 0.2888,
+      "brier": 0.0599,
+      "tn": 5486,
+      "fp": 80,
+      "fn": 355,
+      "tp": 79
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9325,
+      "precision": 0.7636,
+      "recall": 0.0968,
+      "specificity": 0.9977,
+      "f1": 0.1718,
+      "roc_auc": 0.8513,
+      "pr_auc": 0.3974,
+      "brier": 0.0543,
+      "tn": 5553,
+      "fp": 13,
+      "fn": 392,
+      "tp": 42
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.9313,
+      "precision": 0.6447,
+      "recall": 0.1129,
+      "specificity": 0.9951,
+      "f1": 0.1922,
+      "roc_auc": 0.8639,
+      "pr_auc": 0.4036,
+      "brier": 0.0534,
+      "tn": 5539,
+      "fp": 27,
+      "fn": 385,
+      "tp": 49
+    },
+    {
+      "model": "ANN",
+      "accuracy": 0.931,
+      "precision": 0.6,
+      "recall": 0.1382,
+      "specificity": 0.9928,
+      "f1": 0.2247,
+      "roc_auc": 0.8659,
+      "pr_auc": 0.412,
+      "brier": 0.0529,
+      "tn": 5526,
+      "fp": 40,
+      "fn": 374,
+      "tp": 60
+    }
+  ],
+  "trained_at": "2026-10-25 07:13"
+}

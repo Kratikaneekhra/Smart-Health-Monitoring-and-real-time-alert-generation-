@@ -1,0 +1,230 @@
+{
+ "diabetes": {
+  "dataset": "Diabetes prediction dataset (100,000 records, 8 features)",
+  "split": "80/20 stratified hold-out",
+  "best": "XGBoost",
+  "models": [
+   {
+    "model": "XGBoost",
+    "accuracy": 0.9715,
+    "precision": 0.9799,
+    "recall": 0.691,
+    "specificity": 0.9986,
+    "f1": 0.8105,
+    "roc_auc": 0.9779,
+    "pr_auc": 0.8842
+   },
+   {
+    "model": "Random Forest",
+    "accuracy": 0.9183,
+    "precision": 0.5219,
+    "recall": 0.8768,
+    "specificity": 0.9223,
+    "f1": 0.6543,
+    "roc_auc": 0.9748,
+    "pr_auc": 0.8759
+   },
+   {
+    "model": "ANN",
+    "accuracy": 0.8848,
+    "precision": 0.4276,
+    "recall": 0.9039,
+    "specificity": 0.883,
+    "f1": 0.5806,
+    "roc_auc": 0.971,
+    "pr_auc": 0.8533
+   },
+   {
+    "model": "Decision Tree",
+    "accuracy": 0.8788,
+    "precision": 0.4147,
+    "recall": 0.9098,
+    "specificity": 0.8758,
+    "f1": 0.5697,
+    "roc_auc": 0.9699,
+    "pr_auc": 0.8342
+   },
+   {
+    "model": "Logistic Regression",
+    "accuracy": 0.8845,
+    "precision": 0.4251,
+    "recall": 0.8797,
+    "specificity": 0.8849,
+    "f1": 0.5732,
+    "roc_auc": 0.9601,
+    "pr_auc": 0.8166
+   }
+  ]
+ },
+ "heart": {
+  "dataset": "Heart failure prediction dataset (918 patients, 11 features)",
+  "split": "80/20 stratified hold-out, 5-fold CV with GridSearchCV",
+  "best": "ANN",
+  "models": [
+   {
+    "model": "ANN",
+    "accuracy": 0.8967,
+    "precision": 0.8879,
+    "recall": 0.9314,
+    "specificity": 0.8537,
+    "f1": 0.9091,
+    "roc_auc": 0.9443,
+    "pr_auc": 0.9406
+   },
+   {
+    "model": "Logistic Regression",
+    "accuracy": 0.8859,
+    "precision": 0.8857,
+    "recall": 0.9118,
+    "specificity": 0.8537,
+    "f1": 0.8986,
+    "roc_auc": 0.9329,
+    "pr_auc": 0.944
+   },
+   {
+    "model": "Random Forest",
+    "accuracy": 0.8804,
+    "precision": 0.8704,
+    "recall": 0.9216,
+    "specificity": 0.8293,
+    "f1": 0.8952,
+    "roc_auc": 0.9277,
+    "pr_auc": 0.9314
+   },
+   {
+    "model": "XGBoost",
+    "accuracy": 0.8859,
+    "precision": 0.8932,
+    "recall": 0.902,
+    "specificity": 0.8659,
+    "f1": 0.8976,
+    "roc_auc": 0.9275,
+    "pr_auc": 0.9338
+   },
+   {
+    "model": "Decision Tree",
+    "accuracy": 0.8207,
+    "precision": 0.871,
+    "recall": 0.7941,
+    "specificity": 0.8537,
+    "f1": 0.8308,
+    "roc_auc": 0.889,
+    "pr_auc": 0.8797
+   }
+  ]
+ },
+ "cardio": {
+  "dataset": "Cardiovascular health screening (68,581 records after cleaning, 12 features)",
+  "split": "80/20 stratified hold-out, 5-fold CV",
+  "best": "XGBoost",
+  "models": [
+   {
+    "model": "XGBoost",
+    "accuracy": 0.7353,
+    "precision": 0.7556,
+    "recall": 0.6872,
+    "specificity": 0.7824,
+    "f1": 0.7198,
+    "roc_auc": 0.7993,
+    "pr_auc": 0.7793
+   },
+   {
+    "model": "Random Forest",
+    "accuracy": 0.7341,
+    "precision": 0.7622,
+    "recall": 0.6724,
+    "specificity": 0.7945,
+    "f1": 0.7145,
+    "roc_auc": 0.7987,
+    "pr_auc": 0.7784
+   },
+   {
+    "model": "ANN",
+    "accuracy": 0.7308,
+    "precision": 0.7632,
+    "recall": 0.6611,
+    "specificity": 0.7992,
+    "f1": 0.7085,
+    "roc_auc": 0.7972,
+    "pr_auc": 0.7744
+   },
+   {
+    "model": "Decision Tree",
+    "accuracy": 0.7279,
+    "precision": 0.7533,
+    "recall": 0.6692,
+    "specificity": 0.7855,
+    "f1": 0.7088,
+    "roc_auc": 0.7895,
+    "pr_auc": 0.7619
+   },
+   {
+    "model": "Logistic Regression",
+    "accuracy": 0.726,
+    "precision": 0.7531,
+    "recall": 0.6637,
+    "specificity": 0.7869,
+    "f1": 0.7056,
+    "roc_auc": 0.7887,
+    "pr_auc": 0.7681
+   }
+  ]
+ },
+ "kidney": {
+  "dataset": "Chronic kidney disease dataset (400 patients, 24 features)",
+  "split": "80/20 stratified hold-out (80 test patients), 5-fold CV",
+  "best": "Random Forest",
+  "models": [
+   {
+    "model": "Random Forest",
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0
+   },
+   {
+    "model": "SVM",
+    "accuracy": 0.9875,
+    "precision": 1.0,
+    "recall": 0.98,
+    "specificity": 1.0,
+    "f1": 0.9899,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0
+   },
+   {
+    "model": "Logistic Regression",
+    "accuracy": 0.975,
+    "precision": 1.0,
+    "recall": 0.96,
+    "specificity": 1.0,
+    "f1": 0.9796,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0
+   },
+   {
+    "model": "Decision Tree",
+    "accuracy": 0.975,
+    "precision": 1.0,
+    "recall": 0.96,
+    "specificity": 1.0,
+    "f1": 0.9796,
+    "roc_auc": 0.98,
+    "pr_auc": 0.985
+   },
+   {
+    "model": "ANN",
+    "accuracy": 0.925,
+    "precision": 0.9231,
+    "recall": 0.96,
+    "specificity": 0.8667,
+    "f1": 0.9412,
+    "roc_auc": 0.9927,
+    "pr_auc": 0.996
+   }
+  ]
+ }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Health Monitor</title>
+  <meta name="description" content="Screen for diabetes, heart disease, cardiovascular risk and kidney disease, then get matched with the right doctor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#/" aria-label="Smart Health Monitor home">
+        <svg viewBox="0 0 34 20" fill="none" stroke="#2b3ddb" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 11h7l3-8 5 15 4-11 2 4h11"/></svg>
+        <span>Smart Health Monitor</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#/check" data-r="check">Health check</a>
+        <a href="#/doctors" data-r="doctors">Doctors</a>
+        <a href="#/models" data-r="models">Models</a>
+        <a href="#/history" data-r="history">My reports</a>
+      </nav>
+      <div class="who" id="who"></div>
+    </div>
+  </header>
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+  <footer class="footer">
+    <div class="wrap">
+      This tool is a screening aid built for learning. It does not diagnose disease or replace a doctor.
+      The doctor directory is fictional sample data. In an emergency call 112.
+    </div>
+  </footer>
+  <div id="toast-root"></div>
+  <dialog id="dlg"></dialog>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
