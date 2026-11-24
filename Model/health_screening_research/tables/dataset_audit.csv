@@ -1,0 +1,11 @@
+Item,Value
+Original rows,69960
+Original columns,18
+Removed rows,1379
+Final rows,68581
+Missing cells,0
+Duplicate rows,0
+Class 0,34654
+Class 1,33927
+Training rows,54864
+Testing rows,13717

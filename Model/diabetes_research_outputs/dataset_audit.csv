@@ -1,0 +1,10 @@
+Metric,Value
+Original rows,100000.0
+Original columns,9.0
+Duplicate rows,3854.0
+Rows after deduplication,96146.0
+Total missing values,0.0
+Negative samples,87664.0
+Positive samples,8482.0
+Positive prevalence,0.08821999875189815
+Conflicting predictor combinations,91.0
